@@ -24,7 +24,7 @@ def panel(ax, P, V, n, alpha):
         ax.add_patch(Polygon(P[t], closed=True, fc=COLOURS[k % 10], ec='none', alpha=alpha))
     ax.add_patch(Polygon(box, closed=True, fill=False, lw=1.0, ec='0.1', zorder=2))
     ax.scatter(P[:, 0], P[:, 1], s=16, color=COLOURS[0], zorder=3, linewidths=0)
-    ax.set_aspect('equal'); ax.axis('off')
+    ax.set_aspect('equal', adjustable='datalim'); ax.axis('off')   # equal panel boxes, titles in one line
     lo, hi = np.min(box, 0), np.max(box, 0); pad = 0.03 * (hi - lo).max()
     ax.set_xlim(lo[0] - pad, hi[0] + pad); ax.set_ylim(lo[1] - pad, hi[1] + pad)
     name = {'s': 'square', 't': 'triangle', 'c': 'convex'}[V]
