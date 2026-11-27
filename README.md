@@ -11,7 +11,7 @@ large as possible. Three variants, as in the public record tables at <https://ma
 | `t` | triangle (0,0), (1,0), (0,1) | min area / (1/2) |
 | `c` | convex hull of the points (convex variant) | min area / hull area |
 
-As of 27 November 2026 configurations found with this pipeline are the records in 221 of the 294 cells with n ≤ 100
+As of 28 November 2026 configurations found with this pipeline are the records in 218 of the 294 cells with n ≤ 100
 (181 of the 192 cells with 37 ≤ n ≤ 100). The picture above shows three of them (n = 22, all smallest triangles shaded;
 made with `docs/make_banner.py`).
 The method is described in the accompanying paper (`paper/`); this repository is a compact version of the research code
